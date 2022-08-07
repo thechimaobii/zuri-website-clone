@@ -1,0 +1,450 @@
+@font-face {
+    font-family: Averta;
+    src: url(fonts/Averta/AvertaStd-Regular.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+main{
+    width: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    background-color: #fffafa;
+    background-image: url(images/curved-lines.svg);
+    background-size: cover;
+    background-position: right;
+    background-position-x: 50vw;
+    height: 100vh;
+}
+
+
+
+
+
+/* .bg-curves{
+    position: absolute;
+    width: 50%;
+    transform: scale(5);
+    right: -20%;
+} */
+
+.logo{
+    margin: 7em auto 0 auto;
+    width: 8em;
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 7em 1em 5em 1em;
+
+}
+
+.hero-title{
+    margin: 0 auto 1em auto;
+    font-size: 32px;
+    color: #514949;
+    font-family: Averta, sans-serif;
+    font-weight: 700;
+}
+
+.hero-body{
+    line-height: 1.5em;
+    margin: 0 auto 5em auto;
+    max-width: 42em;
+    font-size: 16px;
+    color: #514949;
+    font-family: Averta, sans-serif;
+    font-weight: 100;
+}
+
+span a{
+    color: #e7332b;
+    text-decoration: none;
+}
+
+.hero-section p span a{
+    color: #e7332b;
+    text-decoration: none;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center;
+    
+}
+
+.new-industry-btn{
+    padding: 1em 0;
+    background-color: #e7332b;
+    border: #e7332b solid 1px;
+    width: 15em;
+    font-family: Averta, sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    color: #fff;
+}
+
+.new-industry-btn:hover{
+    background-color: #fff;
+    color: #e7332b;
+    border: #e7332b solid 1px;
+    cursor: pointer;
+
+}
+
+.industry-experience-btn{
+    padding: 1em 0;
+    background-color: #fff;
+    color: #e7332b;
+    border: #e7332b solid 1px;
+    width: 17em;
+    font-family: Averta, sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.industry-experience-btn:hover{
+    color: #fff;
+    background-color: #e7332b;
+    border: #e7332b solid 1px;
+}
+
+.by-zuri{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-title{
+    font-family: Averta, sans-serif;
+    color: #e7332b;
+    font-size: 14px;
+    text-align: center;
+    margin: 5em auto 0 auto;
+
+}
+
+.intro-body{
+    font-family: Averta, sans-serif;
+    margin: 0.5em auto 0 auto;
+    color: #514949;
+    font-size: 24px;
+    line-height: 2em;
+    text-align: center;
+
+}
+
+.offerings{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-shrink: 1;
+    flex-basis: 1;
+}
+
+.left-pattern{
+    display: none;
+    opacity: 0;
+    position: absolute;
+    width: 25em;
+    left: 0;
+    margin-left: 1em;
+}
+
+.right-pattern{
+    display: none;
+    opacity: 0;
+    position: absolute;
+    width: 20em;
+    right: 0;
+    margin-right: 1em;
+}
+
+.zuri-training,
+.zuri-internship,
+.zuri-talent{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    margin: 2em 1em;
+    background-color: #fffafa;
+    padding: 2em 0 3em 0;
+    max-width: 25em;
+    z-index: 1;
+}
+
+.zuri-training > img,
+.zuri-internship > img,
+.zuri-talent > img{
+    width: 8em;
+    margin: 2em;
+}
+
+.zuri-training > p,
+.zuri-internship > p,
+.zuri-talent > p{
+    margin: 0 2em 2em 2em;
+    font-size: 16px;
+    color: #514949;
+    font-family: Averta, sans-serif;
+    font-weight: 100;
+    line-height: 1.5em;
+    padding: 0 0.5em;
+    max-width: 75%;
+}
+
+.zlink a{
+    text-decoration: none;
+    color: #e7332b;
+}
+
+footer{
+    
+    background-color: #fff;
+    text-align: center;
+    margin: 5em auto;
+
+}
+
+.footer-logo{
+    width: 10em;
+    margin: 2em auto;
+}
+
+.fLinks{
+    display: flex;
+    flex-direction: column;
+}
+
+.fLinks > h1{
+    font-family: Averta, sans-serif;
+    font-size: 24px;
+    color: #514949;
+    margin-bottom: 0;
+}
+
+.fLinks > a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #e7332b;
+    font-family: Averta, sans-serif;
+    font-weight: 100;
+    margin: 1em auto 0 auto;
+    width: max-content;
+}
+
+.fContact > h1{
+    font-family: Averta, sans-serif;
+    font-size: 24px;
+    color: #514949;
+    margin: 1em auto 0.5em auto;
+}
+
+.fContact > p{
+    font-size: 16px;
+    color: #514949;
+    font-family: Averta, sans-serif;
+    font-weight: 100;
+    margin: 0 auto 1em auto;
+    width: max-content;
+}
+
+.fContact > a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #e7332b;
+    font-family: Averta, sans-serif;
+    font-weight: 100;
+    margin-top: 1em;
+}
+
+
+.fSocials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2em auto;
+}
+
+.fSocials > h1{
+    font-family: Averta, sans-serif;
+    font-size: 24px;
+    color: #514949;
+    margin-bottom: 0.5em;
+}
+
+.icons{
+    display: flex;
+    gap: 0.3em;
+    justify-content: center;
+}
+
+.icons > img{
+    width: 20px;
+}
+
+hr{
+   margin: 5em 1em 2em 1em;
+}
+
+.copyright{
+    font-family: Averta, sans-serif;
+    font-size: 18px;
+    color: #514949;
+    margin-bottom: 5em;
+}
+
+
+@media screen and (min-width: 700px){
+
+    .left-pattern{
+        display: block;
+        opacity: 100;
+        position: absolute;
+        width: 25em;
+        left: 0;
+        margin-left: 1em;
+    }
+    
+    .right-pattern{
+        display: block;
+        opacity: 100;
+        position: absolute;
+        width: 20em;
+        right: 0;
+        margin-right: 1em;
+    }
+
+    footer{
+        background-color: #fff;
+        text-align: center;
+        margin: 5em 4em;
+    }
+
+    footer > section{
+        display: flex;
+        text-align: left;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 2em;
+    }
+    
+    .footer-logo{
+        width: 7em;
+        margin: 0 2em;
+        padding: 0.5em 0;
+    }
+    
+    .fLinks{
+        display: flex;
+        flex-direction: column;
+        margin: 0 2em;
+        padding: 0;
+        width: max-content;
+        text-align: left;
+    }
+    
+    .fLinks > h1{
+        font-family: Averta, sans-serif;
+        font-size: 24px;
+        color: #514949;
+        margin-bottom: 0;
+    }
+    
+    .fLinks > a{
+        font-size: 16px;
+        text-decoration: none;
+        color: #e7332b;
+        font-family: Averta, sans-serif;
+        font-weight: 100;
+        margin: 1em 0 0 0;
+        width: max-content;
+    }
+
+    .fContact{
+        margin: 0 2em;
+        width: max-content;
+        height: max-content;
+    }
+    
+    .fContact > h1{
+        font-family: Averta, sans-serif;
+        font-size: 24px;
+        color: #514949;
+        margin: 0 auto;
+    }
+    
+    .fContact > p{
+        font-size: 16px;
+        color: #514949;
+        font-family: Averta, sans-serif;
+        font-weight: 100;
+        margin: 0 auto 1em auto;
+        width: max-content;
+    }
+    
+    .fContact > a{
+        font-size: 16px;
+        text-decoration: none;
+        color: #e7332b;
+        font-family: Averta, sans-serif;
+        font-weight: 100;
+        margin-top: 1em;
+    }
+    
+    
+    .fSocials{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 2em;
+    }
+    
+    .fSocials > h1{
+        font-family: Averta, sans-serif;
+        font-size: 24px;
+        color: #514949;
+        margin-bottom: 0.5em;
+    }
+    
+    .icons{
+        display: flex;
+        gap: 0.3em;
+        justify-content: center;
+    }
+    
+    .icons > img{
+        width: 20px;
+    }
+    
+    hr{
+       margin: 5em 1em 2em 1em; 
+    }
+    
+    .copyright{
+        font-family: Averta, sans-serif;
+        font-size: 18px;
+        color: #514949;
+        margin-bottom: 5em;
+    }
+
+
+}
